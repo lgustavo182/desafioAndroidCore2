@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+ <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.desafioandroidcore2.loginActivity">
+
+    <androidx.appcompat.widget.Toolbar android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/purple_500"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        app:title="@string/app_name"
+        app:titleTextColor="@color/white"
+        tools:layout_editor_absoluteX="16dp"
+        xmlns:tools="http://schemas.android.com/tools" />
+
+    <LinearLayout
+        android:paddingTop="50dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.482"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.254">
+
+
+        <TextView
+            android:id="@+id/tvEmailLogin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/tv_email" />
+
+        <EditText
+            android:id="@+id/etEmailLogin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textEmailAddress"
+            android:textColor="@color/purple_500"/>
+
+        <TextView
+            android:id="@+id/tvPasswordLogin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/tv_password" />
+
+        <EditText
+            android:id="@+id/etPasswordLogin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textPassword"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.374"
+            tools:layout_editor_absoluteX="0dp"
+            android:textColor="@color/purple_500"/>
+
+        <Button
+            android:id="@+id/btLogin"
+            android:layout_width="match_parent"
+            android:layout_height="65dp"
+            android:layout_marginTop="50dp"
+            android:backgroundTint="@color/btRegister"
+            android:text="@string/bt_login" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:layout_marginBottom="60dp"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="160dp"
+                android:layout_height="1dp"
+                android:layout_marginTop="10dp"
+                android:background="@color/llOr" />
+
+            <TextView
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/etOr" />
+
+            <LinearLayout
+                android:layout_width="160dp"
+                android:layout_height="1dp"
+                android:layout_marginTop="10dp"
+                android:background="@color/llOr" />
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btRegisterLogin"
+            android:layout_width="match_parent"
+            android:layout_height="65dp"
+            android:layout_marginTop="50dp"
+            android:backgroundTint="@color/btRegisterLogin"
+            android:text="@string/bt_register" />
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
